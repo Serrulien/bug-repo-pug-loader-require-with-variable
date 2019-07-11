@@ -1,0 +1,7 @@
+{ result:
+   [ 'var pug = require("!../node_modules/pug-runtime/index.js");\n\nfunction template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;pug_html = pug_html + "\\u003Cimg" + (pug.attr("src", require(\'./logo.png\'), true, true)) + "\\u003E";;return pug_html;};\nmodule.exports = template;' ],
+  resourceBuffer:
+   <Buffer 69 6d 67 28 73 72 63 3d 72 65 71 75 69 72 65 28 27 2e 2f 6c 6f 67 6f 2e 70 6e 67 27 29 29 0d 0a>,
+  cacheable: true,
+  fileDependencies: [ './src/homepage.pug' ],
+  contextDependencies: [] }
