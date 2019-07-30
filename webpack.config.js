@@ -1,7 +1,6 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-const PugLoader = require('pug-loader');
 
 module.exports = function(env, argv) {
 	const isDevMode = argv.mode.trim() !== 'production';
@@ -43,10 +42,7 @@ module.exports = function(env, argv) {
 			new HtmlWebpackPlugin({
 				template: './src/homepage.pug',
 				filename: './homepage.html',
-				inject: false,
-				templateParameters: {
-
-				}
+				inject: false
 			}),
 			new CleanWebpackPlugin(),
 		]
