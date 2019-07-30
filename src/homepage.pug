@@ -1,6 +1,9 @@
-//- works
-//- img(src=require('./logo.png'))
+- const path = './logo.png'
 
 //- buggy
-- var path = './logo.png'
 img(src=require(path))
+
+//- works
+img(src=require('./logo.png'))
+img(src=require(`${path}`))
+img(src=require('' + path))
